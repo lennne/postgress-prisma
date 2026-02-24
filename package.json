@@ -1,8 +1,31 @@
 {
+  "name": "postgress-prisma",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.4.1",
     "@prisma/client": "^7.4.1",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
+    "nodemon": "^3.1.14",
+    "pg": "^8.18.0",
     "prisma": "^7.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lennne/postgress-prisma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lennne/postgress-prisma/issues"
+  },
+  "homepage": "https://github.com/lennne/postgress-prisma#readme"
 }
