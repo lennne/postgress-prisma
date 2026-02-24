@@ -26,6 +26,17 @@ services:
       - .:/usr/src/app
       - /usr/src/app/node_modules
     command: ["sh", "-c", "npx prisma generate && node src/server.js"]
+  
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    restart: always
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090" 
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
 
 volumes:
   postgres_data:
