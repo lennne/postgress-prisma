@@ -1,7 +1,11 @@
 const express = require('express')
-const { AddAuthController } = require('../controllers/authorController')
+const { AddAuthorController, getAllAuthorsController, getAuthorByIdController, updateAuthorByIdController, deleteAuthorByIdController } = require('../controllers/authorController')
 const router = express.Router()
 
-router.post('/add-author', AddAuthController);
+router.post('/add-author', AddAuthorController);
+router.get('/', getAllAuthorsController);
+router.get('/:id', getAuthorByIdController);
+router.put('/:id', updateAuthorByIdController);
+router.delete('/:id', deleteAuthorByIdController);
 
 module.exports = router

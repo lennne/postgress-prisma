@@ -17,7 +17,9 @@ model Book {
   id Int @id @default(autoincrement())
   title String
   publishedDate DateTime
-  author Author @relation(fields: [authorId], references: [id])
+  author Author @relation(fields: [authorId], references: [id], onDelete: Cascade) //we assign the cascade method here because
+                                                                // when the parent is deleted this child(associated data)
+                                                                // will also be deleted
   authorId Int
 }
 
