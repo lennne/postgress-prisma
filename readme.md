@@ -1,4 +1,4 @@
-# Postgres-Prisma Concept Project
+# PersistenceEngine — Scalable Data Access Layer
 
 This project is a dedicated deep-dive into **Modern Relational Database Management** using **PostgreSQL** and **Prisma ORM**. It transitions from raw SQL query patterns to a type-safe, schema-driven architecture, focusing on the core principles of data integrity, relational modeling, and atomic transactions.
 
