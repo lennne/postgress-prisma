@@ -104,8 +104,6 @@ npm start
 | `/api/book/:id` | `PUT` | Update book title via Transaction |
 | `/api/author/:id` | `DELETE` | Delete author (Cascades to Books) |
 
-**Would you like me to add a section on how to use "Prisma Studio" to visualize this data in your browser?**
-
 
 ### How to "Clean Up"
 
